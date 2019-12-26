@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg"
+
+    tools:context=".modipa2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/bgpage"
+        >
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:onClick="Click"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Attendance"
+            android:textSize="34dp"
+            android:fontFamily="@font/asap"
+            android:layout_toRightOf="@+id/image"
+            android:paddingLeft="14dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="number"
+            android:editable="false"
+            android:visibility="invisible"/>
+        <EditText
+            android:id="@+id/NIK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NIK"
+            android:editable="false" />
+        <EditText
+            android:id="@+id/Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:editable="false" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:editable="false" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/time"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:editable="false" />
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SUBJECT"
+            android:editable="false" />
+        <EditText
+            android:id="@+id/status"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+         />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:background="@drawable/btn"
+            android:layout_centerVertical="true"
+            android:text="UPDATE"
+            android:textSize="25dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn"
+            android:text="DELETE"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</LinearLayout>

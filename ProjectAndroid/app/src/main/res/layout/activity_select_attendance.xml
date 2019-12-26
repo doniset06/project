@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SelectAttendance">
+     <RelativeLayout
+    android:id="@+id/headerBackground"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:background="@drawable/bgpage">
+    <ImageView
+        android:id="@+id/imageUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/teacher"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="26dp"/>
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/imageUser"
+        android:fontFamily="@font/asap"
+
+        android:textColor="@color/white"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/NIKName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="83dp"
+        android:layout_toRightOf="@id/imageUser"
+        android:fontFamily="@font/asap"
+
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="103dp"
+        android:layout_toRightOf="@id/imageUser"
+
+        android:fontFamily="@font/asap"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+</RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+        </Spinner>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select"
+            android:layout_below="@+id/spinner"
+            android:background="@drawable/btn"
+            android:layout_centerInParent="true"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+            android:background="@drawable/btncircle"
+            android:onClick="Click"
+            android:src="@drawable/ic_undo_black_24dp"/>
+    </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>

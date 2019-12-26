@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.projectandroid">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".modipa2"></activity>
+        <activity android:name=".modipa1" />
+        <activity android:name=".activityipa2" />
+        <activity android:name=".activityipa1" />
+        <activity android:name=".IPA2" />
+        <activity android:name=".IPA1" />
+        <activity android:name=".SelectClass" />
+        <activity android:name=".SelectAttendance" />
+        <activity android:name=".Attendance" />
+        <activity android:name=".Attendance2" />
+        <activity android:name=".HomePage" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".LoginTeacher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
